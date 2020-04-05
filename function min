@@ -1,0 +1,4 @@
+function min(arg1,arg2) {
+  let arg1=prompt('Введите первый аргумент',arg1);
+    if(arg1<arg2)return a1();
+    else return a2();
