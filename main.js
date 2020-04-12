@@ -110,17 +110,19 @@ let englishLesson = 'London is the capital of Great Britain';
 
 Практика 2
 
-//Напишите функцию min, принимающую два аргумента, и возвращающую минимальный из них;
-function min(arg1,arg2) {
-  let arg1=prompt('Введите первый аргумент',arg1);
-    if(arg1<arg2)return arg1;
-    else return arg2;
+//Напишите функцию min, принимающую два аргумента, и возвращающую минимальный из них;//Напишите функцию min, принимающую два аргумента, и возвращающую минимальный из них;
+function min(arg1,arg2){
+  let arg1=('Введите первый аргумент');
+  let arg2=('Введите второй аргумент');
+  let result =(arg1<arg2)?arg1:arg2;
 }
-//Напиши функцию-счётчик, которая считает свои вызовы и возвращает их текущее число.
-function makeCounter() {
-  let count = 1;
 
-  return function() {
-    return count++;
-  };
+//Напиши функцию-счётчик, которая считает свои вызовы и возвращает их текущее число.
+function makeCounter(){
+  let count=1;
+  return function(){
+    count++
+  }
 }
+challengeFunction=makeCounter();
+console.log(challengeFunction);
