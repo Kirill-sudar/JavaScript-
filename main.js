@@ -106,3 +106,19 @@ let englishLesson = 'London is the capital of Great Britain';
 // переприсвоить переменную со значением 7
 // еще раз вывести в консоль тип переменной
 // в первом случае должно быть string, а во  втором number
+//Напишите функцию min, принимающую два аргумента, и возвращающую минимальный из них;
+function min(arg1,arg2){
+  let arg1=('Введите первый аргумент');
+  let arg2=('Введите второй аргумент');
+  let result =(arg1<arg2)?arg1:arg2;
+}
+
+//Напиши функцию-счётчик, которая считает свои вызовы и возвращает их текущее число.
+function makeCounter(){
+  let count=1;
+  return function(){
+    count++
+  }
+}
+challengeFunction=makeCounter();
+console.log(challengeFunction);
