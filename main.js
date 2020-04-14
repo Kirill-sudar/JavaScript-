@@ -111,18 +111,8 @@ let englishLesson = 'London is the capital of Great Britain';
 Практика 2
 
 //Напишите функцию min, принимающую два аргумента, и возвращающую минимальный из них;//Напишите функцию min, принимающую два аргумента, и возвращающую минимальный из них;
-function max(arg1,arg2){
-  let arg1=('Введите первый аргумент');
-  let arg2=('Введите второй аргумент');
-  let result =(arg1>arg2)?arg1:arg2;
-}
+let max = (arg1, arg2) => arg1 > arg2 ? arg1 : arg2;
 
 //Напиши функцию-счётчик, которая считает свои вызовы и возвращает их текущее число.
-function makeCounter(){
-  let count=1;
-  return function(){
-    count++
-  }
-}
-challengeFunction=makeCounter();//глобальный счетчик.
-console.log(challengeFunction);
+let makeCounter=(count=1)=>count++;
+Challengefunction=makeCounter();
