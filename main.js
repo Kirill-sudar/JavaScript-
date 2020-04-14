@@ -115,4 +115,4 @@ let max = (arg1, arg2) => arg1 > arg2 ? arg1 : arg2;
 
 //Напиши функцию-счётчик, которая считает свои вызовы и возвращает их текущее число.
 let makeCounter=(count=1)=>count++;
-Challengefunction=makeCounter();
+Challengefunction=makeCounter();//
