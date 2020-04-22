@@ -115,5 +115,16 @@ let max = (arg1, arg2) => arg1 > arg2 ? arg1 : arg2;
 
 //Напиши функцию-счётчик, которая считает свои вызовы и возвращает их текущее число.
 
- let makeCounter(count=1)=> let counter(count)count++;
- let counter=makeCounter();
+ var currentCount = 1;
+
+ makeCounter=()=>function() {return currentCount++;} 
+
+var counter1 = makeCounter();
+
+console.log( counter1() );
+console.log( counter1() );
+
+var counter2 = makeCounter();
+
+console.log( counter2() );
+console.log( counter2() );
