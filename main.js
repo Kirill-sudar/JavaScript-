@@ -177,5 +177,5 @@ var year = +prompt("Введи год:");
 if(isLeapYear(year)){
     alert("Год " + year + " - високосный.");
 } else {
-    alert("Год " + year + " - не високосный.");
+    alert("Год " + year + " - не високосный.")
 }
