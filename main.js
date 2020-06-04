@@ -128,7 +128,9 @@ var counter2 = makeCounter();
 
 console.log( counter2() );
 console.log( counter2() );
- Практика 2
+
+
+ПРАКТИКА 2
 задание 1
 var i = 0, j = 0;
 // Желаемое количество строк
